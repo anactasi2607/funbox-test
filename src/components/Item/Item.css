@@ -1,0 +1,162 @@
+.item {
+  position: relative;
+
+  width: 320px;
+  padding: 4px;
+}
+
+.default {
+  background-image: url("../../img/back-default@1x.png");
+  background-repeat: no-repeat;
+}
+
+.selected {
+  background-image: url("../../img/back-selected@1x.png");
+  background-repeat: no-repeat;
+}
+
+.disabled {
+  background-image: url("../../img/back-disabled@1x.png");
+  background-repeat: no-repeat;
+}
+
+.default .item__weight {
+  background-color: #1698d9;
+}
+
+.selected .item__weight {
+  background-color: #d91667;
+}
+
+.disabled .item__weight {
+  background-color: #b3b3b3;
+}
+
+.item__bottom-comment {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.1px;
+}
+
+.default .item__bottom-comment {
+  color: #ffffff;
+}
+
+.selected .item__bottom-comment {
+  color: #ffffff;
+}
+
+.disabled .item__bottom-comment {
+  color: #ffff66;
+}
+
+.disabled .item__container,
+.disabled .item__img {
+  color: #b3b3b3;
+
+  opacity: 0.5;
+}
+
+.item__container {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 54px 23px 43px;
+}
+
+.item__text {
+  margin: 0;
+  margin-bottom: 18px;
+
+  color: #666666;
+}
+
+.item__title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 32px;
+}
+
+.item__taste {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.item__portions,
+.item__present,
+.item__info {
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.item__info {
+  display: block;
+  min-height: 16px;
+}
+
+.item__img {
+  margin-bottom: 15px;
+
+  border-radius: 10px;
+}
+
+.item__weight {
+  position: absolute;
+  top: 383px;
+  right: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 82px;
+  height: 82px;
+  padding: 20px 0 10px;
+
+  font-size: 42px;
+  line-height: 22px;
+  color: #ffffff;
+
+  border-radius: 50%;
+}
+
+.item__kg {
+  font-size: 21px;
+  line-height: 22px;
+}
+
+@media (min-width: 340px) {
+  .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 740px) {
+  .item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  .item:nth-child(odd) {
+    margin-right: 80px;
+  }
+
+  .item:last-child {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1140px) {
+  .item:not(:last-child) {
+    margin: 0;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 80px;
+  }
+}
