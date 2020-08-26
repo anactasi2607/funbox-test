@@ -14,20 +14,43 @@ function Item(props) {
           ? "selected"
           : "default")
       }
-      data-id={props.item.id}
-      onClick={props.onClick}
     >
-      <div className="item__container">
-        <p className="item__text">Сказочное заморское яство</p>
-        <h2 className="item__title">
-          Нямушка
-          <span className="item__taste"> {props.item.taste}</span>
-        </h2>
-        <span className="item__portions">{props.item.portions} порций</span>
-        <span className="item__present">{props.item.present} в подарок</span>
-        <span className="item__info">{props.item.textInfo}</span>
+      <div
+        className={
+          "item__container " +
+          "container-" +
+          (props.item.disabled
+            ? "disabled"
+            : props.item.selected
+            ? "selected"
+            : "default")
+        }
+        data-id={props.item.id}
+        onClick={props.onClick}
+        onMouseEnter={props.onMouseEnter}
+        onMouseLeave={props.onMouseLeave}
+      >
+        <div className="item__info">
+          {props.item.onHover ? (
+            <p className="item__text--selected">Котэ не одобряет?</p>
+          ) : (
+            <p className="item__text">Сказочное заморское яство</p>
+          )}
+
+          <h2 className="item__title">
+            Нямушка
+            <span className="item__taste"> {props.item.taste}</span>
+          </h2>
+          <span className="item__portions">{props.item.portions} порций</span>
+          <span className="item__present">{props.item.present} в подарок</span>
+          <span className="item__complement">{props.item.textInfo}</span>
+        </div>
+        <img className="item__img" src={cat} alt="Фото кота"></img>
+        <div className="item__weight">
+          {props.item.weight}
+          <span className="item__kg">кг</span>
+        </div>
       </div>
-      <img className="item__img" src={cat} alt="Фото кота"></img>
       <p className="item__bottom-comment">
         {props.item.disabled ? (
           props.item.textDisabled
@@ -36,16 +59,17 @@ function Item(props) {
         ) : (
           <span>
             Чего сидишь? Порадуй котэ,{" "}
-            <a href="#" className="item__link" data-id={props.item.id}>
+            <a
+              href="#"
+              className="item__link"
+              data-id={props.item.id}
+              onClick={props.onClick}
+            >
               купи
             </a>
           </span>
         )}
       </p>
-      <div className="item__weight">
-        {props.item.weight}
-        <span className="item__kg">кг</span>
-      </div>
     </li>
   );
 }
