@@ -14,6 +14,8 @@ function Item(props) {
           ? "selected"
           : "default")
       }
+      data-id={props.item.id}
+      onClick={props.onClick}
     >
       <div className="item__container">
         <p className="item__text">Сказочное заморское яство</p>
@@ -27,11 +29,18 @@ function Item(props) {
       </div>
       <img className="item__img" src={cat} alt="Фото кота"></img>
       <p className="item__bottom-comment">
-        {props.item.disabled
-          ? props.item.textDisabled
-          : props.item.selected
-          ? props.item.textSelected
-          : "Чего сидишь? Порадуй котэ, купи"}
+        {props.item.disabled ? (
+          props.item.textDisabled
+        ) : props.item.selected ? (
+          props.item.textSelected
+        ) : (
+          <span>
+            Чего сидишь? Порадуй котэ,{" "}
+            <a href="#" className="item__link" data-id={props.item.id}>
+              купи
+            </a>
+          </span>
+        )}
       </p>
       <div className="item__weight">
         {props.item.weight}

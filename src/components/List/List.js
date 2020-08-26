@@ -3,12 +3,10 @@ import Item from "../Item/Item";
 import "./List.css";
 
 function List(props) {
-  console.log(props);
-
   return (
     <ul className="list">
       {props.data.map((item) => (
-        <Item item={item} key={item.id} />
+        <Item item={item} key={item.id} onClick={props.onClick} />
       ))}
     </ul>
   );
