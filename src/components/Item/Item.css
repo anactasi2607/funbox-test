@@ -37,6 +37,8 @@
 .item__container {
   position: relative;
   z-index: 5;
+
+  margin-bottom: 15px;
 }
 
 .item__link {
@@ -147,15 +149,13 @@
 }
 
 .item__img {
-  margin-bottom: 15px;
-
   border-radius: 10px;
 }
 
 .item__weight {
   position: absolute;
-  top: 383px;
-  right: 15px;
+  top: 380px;
+  right: 11px;
 
   display: flex;
   flex-direction: column;

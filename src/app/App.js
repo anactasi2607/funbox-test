@@ -51,7 +51,7 @@ class App extends Component {
     let products = this.state.products;
 
     let itemIndex = this.state.products.findIndex(
-      (item) => item.id == event.currentTarget.dataset.id
+      (item) => item.id === +event.currentTarget.dataset.id
     );
 
     let newItem = {
@@ -73,7 +73,7 @@ class App extends Component {
     let products = this.state.products;
 
     let itemIndex = this.state.products.findIndex(
-      (item) => item.id == evt.currentTarget.dataset.id
+      (item) => item.id === +evt.currentTarget.dataset.id
     );
 
     if (products[itemIndex].selected) {
@@ -96,7 +96,7 @@ class App extends Component {
     let products = this.state.products;
 
     let itemIndex = this.state.products.findIndex(
-      (item) => item.id == evt.currentTarget.dataset.id
+      (item) => item.id === +evt.currentTarget.dataset.id
     );
 
     let newItem = {
