@@ -1,44 +1,42 @@
-/* .x1 {
-  position: relative;
-
-  fill: transparent;
-  stroke: red;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 5px;
-}
-
-.svg2 {
-  position: absolute;
-}
-
-svg {
-  position: absolute;
-  left: 0;
-
-  width: 320px;
-  height: 480px;
-}
-
-.x2 {
-  position: relative;
-
-  fill: white;
-  stroke: white;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 4px;
-}
-
-.svg2:hover + .svg1 .x1 {
-  stroke: blue;
-} */
-
 .item {
   position: relative;
 
   width: 320px;
   padding: 4px;
+}
+
+.item__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  fill: white;
+  stroke-width: 4;
+}
+
+.default .item__background {
+  stroke: #1698d9;
+}
+
+.default:hover .item__background {
+  stroke: #2ea8e6;
+}
+
+.selected .item__background {
+  stroke: #d91667;
+}
+
+.selected:hover .item__background {
+  stroke: #e62e7a;
+}
+
+.disabled .item__background {
+  stroke: #b3b3b3;
+}
+
+.item__container {
+  position: relative;
+  z-index: 5;
 }
 
 .item__link {
@@ -48,24 +46,9 @@ svg {
   border-bottom: 1px dashed #1698d9;
 }
 
-.default {
-  background-image: url("../../img/back-default@1x.png");
-  background-repeat: no-repeat;
-}
-
 .container-default,
 .container-selected {
   cursor: pointer;
-}
-
-.selected {
-  background-image: url("../../img/back-selected@1x.png");
-  background-repeat: no-repeat;
-}
-
-.disabled {
-  background-image: url("../../img/back-disabled@1x.png");
-  background-repeat: no-repeat;
 }
 
 .default .item__weight {

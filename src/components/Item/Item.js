@@ -18,6 +18,21 @@ function Item(props) {
           : "default")
       }
     >
+      <svg className="item__background" viewBox="-2 -2 320 480">
+        <path
+          d="M 160,476   
+          L 10,476  
+          C 10,476 0,476 0,466  
+          L 0,45  
+          L 45,0  
+          L 306,0  
+          C 306,0 316,0 316, 6  
+          L 316, 466  
+          C 316,466 316,476 306,476   
+          L 306,476 160,476  
+        "
+        />
+      </svg>
       <div
         className={
           "item__container " +
@@ -33,12 +48,6 @@ function Item(props) {
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
       >
-        {/* <svg class="svg2">
-          <polygon class="x2" points="0,45 45,0 320,0 320,480 0,480" />
-        </svg>
-        <svg class="svg1">
-          <polygon class="x1" points="0,45 45,0 320,0 320,480 0,480" />
-        </svg> */}
         <div className="item__info">
           {props.item.onHover ? (
             <p className="item__text--selected">Котэ не одобряет?</p>
