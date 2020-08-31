@@ -1,3 +1,39 @@
+/* .x1 {
+  position: relative;
+
+  fill: transparent;
+  stroke: red;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5px;
+}
+
+.svg2 {
+  position: absolute;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+
+  width: 320px;
+  height: 480px;
+}
+
+.x2 {
+  position: relative;
+
+  fill: white;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4px;
+}
+
+.svg2:hover + .svg1 .x1 {
+  stroke: blue;
+} */
+
 .item {
   position: relative;
 
@@ -140,7 +176,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 82px;
   height: 82px;
@@ -167,10 +203,6 @@
 @media (min-width: 740px) {
   .item:not(:last-child) {
     margin-bottom: 80px;
-  }
-
-  .item:nth-child(odd) {
-    margin-right: 80px;
   }
 
   .item:last-child {

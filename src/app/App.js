@@ -117,19 +117,6 @@ class App extends Component {
     return (
       <div className="container">
         <section className="catalog">
-          {/* <svg class="svg2">
-            <polygon
-              class="x2"
-              points="54,47.5 89.5,24 118.5,24 118.5,116 54,116"
-            />
-          </svg>
-          <svg class="svg1">
-            <polygon
-              class="x1"
-              points="50,47.5 87.5,20 122.5,20 122.5,120 50,120"
-            />
-          </svg> */}
-
           <h1 className="catalog__title">Ты сегодня покормил кота?</h1>
           <List
             data={this.state.products}

@@ -8,40 +8,6 @@
   url("../fonts/Exo2.0-Thin.woff") format("woff");
 }
 
-/* .x1 {
-  position: relative;
-
-  fill: transparent;
-  stroke: red;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 5px;
-}
-
-.svg2 {
-  position: absolute;
-  left: 0;
-}
-
-svg {
-  width: 100px;
-  height: 100px;
-}
-
-.x2 {
-  position: relative;
-
-  fill: white;
-  stroke: white;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 4px;
-}
-
-.svg2:hover + .svg1 .x1 {
-  stroke: blue;
-} */
-
 .main {
   width: 100%;
   min-height: 100vh;
@@ -70,7 +36,7 @@ svg {
 
 @media (min-width: 740px) {
   .container {
-    width: 740px;
+    width: 800px;
     padding: 10px;
   }
 }
