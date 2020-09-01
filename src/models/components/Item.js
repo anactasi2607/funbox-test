@@ -1,9 +1,9 @@
 import React from "react";
-import "./Item.css";
-import cat from "./cat@1x.png";
-import cat2x from "./cat@2x.png";
-import catWeb from "./cat@1x.webp";
-import catWeb2x from "./cat@2x.webp";
+import "../../styles/Item.css";
+import cat from "../../assets/cat@1x.png";
+import cat2x from "../../assets/cat@2x.png";
+import catWeb from "../../assets/cat@1x.webp";
+import catWeb2x from "../../assets/cat@2x.webp";
 
 function Item(props) {
   return (

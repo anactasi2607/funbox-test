@@ -104,20 +104,23 @@
 .item__info {
   display: flex;
   flex-direction: column;
-  padding: 18px 54px 23px 43px;
+  padding: 18px 54px 20px 43px;
 }
 
 .item__text {
   margin: 0;
   margin-bottom: 18px;
 
+  line-height: 18px;
   color: #666666;
+  letter-spacing: 1px;
 }
 
 .item__text--selected {
   margin: 0;
   margin-bottom: 18px;
 
+  line-height: 18px;
   color: #e62e7a;
 }
 
