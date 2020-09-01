@@ -38,7 +38,7 @@
   position: relative;
   z-index: 5;
 
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .item__link {
@@ -125,9 +125,15 @@
 }
 
 .item__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 64px;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 21px;
+}
 
+.item__title-name {
   font-weight: bold;
   font-size: 48px;
   line-height: 32px;

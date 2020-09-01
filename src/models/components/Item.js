@@ -56,7 +56,7 @@ function Item(props) {
           )}
 
           <h2 className="item__title">
-            Нямушка
+            <span className="item__title-name">Нямушка</span>
             <span className="item__taste"> {props.item.taste}</span>
           </h2>
           <span className="item__portions">{props.item.portions} порций</span>
