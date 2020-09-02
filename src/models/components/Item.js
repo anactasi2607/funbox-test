@@ -18,7 +18,7 @@ function Item(props) {
           : "default")
       }
     >
-      <svg className="item__background" viewBox="-2 -2 320 480">
+      <svg className="item__background" viewBox="-2 -2 320 510">
         <path
           d="M 160,476   
           L 10,476  
