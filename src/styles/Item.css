@@ -46,6 +46,7 @@
   text-decoration: none;
 
   border-bottom: 1px dashed #1698d9;
+  cursor: pointer;
 }
 
 .container-default,
@@ -82,7 +83,7 @@
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.3px;
 }
 
 .default .item__bottom-comment {
@@ -161,7 +162,7 @@
 }
 
 .item__img {
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .item__weight {

@@ -48,6 +48,7 @@ class App extends Component {
   };
 
   onClick = (event) => {
+    event.preventDefault;
     let products = this.state.products;
 
     let itemIndex = this.state.products.findIndex(

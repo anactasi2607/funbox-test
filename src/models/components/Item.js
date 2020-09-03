@@ -93,7 +93,6 @@ function Item(props) {
           <span>
             Чего сидишь? Порадуй котэ,{" "}
             <a
-              href="/#"
               className="item__link"
               data-id={props.item.id}
               onClick={props.onClick}

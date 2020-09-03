@@ -9,7 +9,10 @@
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open"
   },
-  "browserslist": ">0.25%, not dead",
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ],
   "keywords": [
     "js",
     "webpack"
@@ -43,8 +46,10 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
+    "autoprefixer": "^9.8.6",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
+    "postcss-loader": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
